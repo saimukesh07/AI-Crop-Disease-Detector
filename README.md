@@ -11,6 +11,7 @@ Confidence on real images: up to 98.7%
 Dataset: PlantVillage (54,000+ images, 38 disease classes)
 
 Tech Stack:
+
 Python
 TensorFlow & Keras
 MobileNetV2 (Transfer Learning)
