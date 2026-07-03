@@ -95,18 +95,51 @@ st.markdown("""
     color: #1a1a1a !important;
 }
 
-/* Upload Section */
+/* Upload Section — outer wrapper */
 [data-testid="stFileUploader"] {
     background: #e0e0e0;
     padding: 15px;
     border-radius: 12px;
 }
 
+/* Upload label & helper text */
 [data-testid="stFileUploader"] label,
 [data-testid="stFileUploader"] span,
-[data-testid="stFileUploader"] p {
+[data-testid="stFileUploader"] p,
+[data-testid="stFileUploader"] small {
     color: #1a1a1a !important;
     font-weight: 600;
+}
+
+/* The dark dropzone box itself → make it light grey */
+[data-testid="stFileUploader"] section,
+[data-testid="stFileDropzone"] {
+    background-color: #f0f0f0 !important;
+    border: 2px dashed #2e7d32 !important;
+    border-radius: 10px !important;
+}
+
+/* Text INSIDE the dropzone (200MB per file, file types) */
+[data-testid="stFileDropzone"] span,
+[data-testid="stFileDropzone"] p,
+[data-testid="stFileDropzone"] div,
+[data-testid="stFileDropzone"] small,
+[data-testid="stFileDropzone"] button span {
+    color: #1a1a1a !important;
+    font-weight: 500;
+}
+
+/* The Upload button inside the dropzone */
+[data-testid="stFileDropzone"] button {
+    background-color: #2e7d32 !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+}
+
+[data-testid="stFileDropzone"] button:hover {
+    background-color: #1b5e20 !important;
 }
 
 /* Sidebar */
